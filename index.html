@@ -2,102 +2,55 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Biblioteca Escolar Digital</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <title>Biblioteca Escolar</title>
   <style>
     body {
-      font-family: 'Poppins', sans-serif;
+      font-family: Arial, sans-serif;
+      background: #f3f4f6;
+      text-align: center;
       margin: 0;
-      background-color: #f4f9ff;
-      color: #333;
+      padding: 40px;
     }
-    header {
-      background-color: #0056b3;
-      color: white;
-      padding: 40px 20px;
-      text-align: center;
+
+    h1 {
+      font-size: 36px;
+      margin-bottom: 20px;
     }
-    section {
-      max-width: 900px;
-      margin: 30px auto;
-      background: white;
-      padding: 30px;
-      border-radius: 15px;
-      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
-    }
-    h1, h2 {
-      margin-top: 0;
-    }
-    .libro {
-      margin: 15px 0;
-      padding: 15px;
-      background: #e9f1ff;
-      border-radius: 10px;
+
+    .grados-container {
       display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    .libro a {
-      background-color: #0056b3;
-      color: white;
-      padding: 10px 15px;
-      border-radius: 8px;
-      text-decoration: none;
-    }
-    footer {
-      text-align: center;
-      background-color: #0056b3;
-      color: white;
-      padding: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
       margin-top: 40px;
+    }
+
+    .boton-grado {
+      background-color: #4CAF50;
+      color: white;
+      padding: 20px 30px;
+      border: none;
+      border-radius: 10px;
+      font-size: 18px;
+      text-decoration: none;
+      transition: background-color 0.3s;
+    }
+
+    .boton-grado:hover {
+      background-color: #388e3c;
     }
   </style>
 </head>
 <body>
+  <h1>Biblioteca Virtual Escolar</h1>
+  <p>Selecciona tu grado para ver los libros disponibles</p>
 
-<header>
-  <h1>📚 Biblioteca Escolar Digital</h1>
-  <p>Accede aquí a los libros de tu colegio desde cualquier lugar</p>
-</header>
-
-<section>
-  <h2>📘 Libros por curso</h2>
-  
-  <div class="libro">
-    <span>Matemática – 6to grado</span>
-    <a href="Matematica-6to.pdf" target="_blank">Ver / Descargar</a>
+  <div class="grados-container">
+    <a class="boton-grado" href="primer-grado.html">Primer Grado</a>
+    <a class="boton-grado" href="segundo-grado.html">Segundo Grado</a>
+    <a class="boton-grado" href="tercer-grado.html">Tercer Grado</a>
+    <a class="boton-grado" href="cuarto-grado.html">Cuarto Grado</a>
+    <a class="boton-grado" href="quinto-grado.html">Quinto Grado</a>
   </div>
-
-  <div class="libro">
-    <span>Comunicación – 6to grado</span>
-    <a href="Comunicacion-6to.pdf" target="_blank">Ver / Descargar</a>
-  </div>
-
-  <div class="libro">
-    <span>Ciencia y Tecnología – 5to grado</span>
-    <a href="Ciencia-5to.pdf" target="_blank">Ver / Descargar</a>
-  </div>
-  
-</section>
-
-<section>
-  <h2>📝 Material adicional</h2>
-  <ul>
-    <li><a href="#">Guía de lectura 1</a></li>
-    <li><a href="#">Resumen de Ciencias</a></li>
-    <li><a href="#">Cuaderno de ejercicios</a></li>
-  </ul>
-</section>
-
-<section>
-  <h2>🔔 Noticias escolares</h2>
-  <p>📌 Se agregaron nuevos libros el 28 de abril</p>
-  <p>📌 Recuerda que puedes usar esta página también desde tu celular</p>
-</section>
-
-<footer>
-  &copy; 2025 Biblioteca Escolar - Tu Colegio
-</footer>
-
 </body>
 </html>
