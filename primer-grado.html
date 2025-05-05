@@ -2,80 +2,97 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Primer Grado - Biblioteca Escolar</title>
+  <title>Libros - Primer Grado</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
       font-family: 'Poppins', sans-serif;
-      background-color: #f0f8ff;
+      background: linear-gradient(to right, #ffecd2, #fcb69f);
       color: #333;
-      text-align: center;
-    }
-
-    header {
-      background-color: #2193b0;
-      color: white;
-      padding: 30px;
+      padding: 20px;
     }
 
     h1 {
-      margin: 0;
+      text-align: center;
+      color: #d35400;
+      margin-bottom: 10px;
     }
 
-    .libros {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+    .volver {
+      display: inline-block;
+      margin-bottom: 30px;
+      text-decoration: none;
+      color: #fff;
+      background-color: #d35400;
+      padding: 10px 20px;
+      border-radius: 10px;
+      transition: background-color 0.3s;
+    }
+
+    .volver:hover {
+      background-color: #e67e22;
+    }
+
+    .materia {
+      background-color: white;
+      border-radius: 15px;
       padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .materia h2 {
+      color: #d35400;
     }
 
     .libro {
-      background: white;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      padding: 20px;
-      margin: 10px;
-      width: 80%;
-      max-width: 600px;
-      text-align: left;
+      margin-top: 10px;
+      padding: 10px;
+      background-color: #fceae3;
+      border-left: 5px solid #d35400;
+      border-radius: 8px;
     }
 
-    .libro h3 {
-      color: #2193b0;
-      margin: 0 0 10px;
-    }
-
-    a.volver {
-      display: inline-block;
-      margin: 20px;
-      padding: 10px 20px;
-      background-color: #2193b0;
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      padding: 15px;
+      background-color: #d35400;
       color: white;
-      text-decoration: none;
       border-radius: 10px;
     }
   </style>
 </head>
 <body>
 
-  <header>
-    <h1>📘 Libros - Primer Grado</h1>
-  </header>
+  <a class="volver" href="index.html">← Volver a la página principal</a>
+  <h1>📘 Libros de Primer Grado</h1>
 
-  <div class="libros">
+  <div class="materia">
+    <h2>Historia, Geografía y Economía</h2>
     <div class="libro">
-      <h3>Lengua y Literatura</h3>
-      <p>Contenido del libro o enlace para descargar.</p>
+      Libro de Santillana (pendiente de enlace)
     </div>
-    <div class="libro">
-      <h3>Matemáticas</h3>
-      <p>Contenido del libro o enlace para descargar.</p>
-    </div>
-    <!-- Puedes agregar más materias -->
   </div>
 
-  <a class="volver" href="index.html">← Volver al inicio</a>
+  <div class="materia">
+    <h2>Desarrollo Personal, Ciudadanía y Cívica (DPCC)</h2>
+    <div class="libro">
+      Libro de Santillana (pendiente de enlace)
+    </div>
+  </div>
+
+  <div class="materia">
+    <h2>Ciencia, Tecnología y Ambiente (CTA)</h2>
+    <div class="libro">
+      Libro de Santillana (pendiente de enlace)
+    </div>
+  </div>
+
+  <footer>
+    Biblioteca Escolar - Primer Grado | Más libros se añadirán pronto.
+  </footer>
 
 </body>
 </html>
