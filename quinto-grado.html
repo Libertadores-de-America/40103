@@ -7,47 +7,66 @@
   <style>
     body {
       background-color: #ede7f6;
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
       padding: 20px;
     }
+
     h1 {
       text-align: center;
       color: #6a1b9a;
+      margin-bottom: 30px;
     }
+
     .materia {
       background-color: #d1c4e9;
-      border: 2px solid #8e24aa;
-      padding: 15px;
+      border-left: 8px solid #8e24aa;
+      padding: 20px;
       margin-bottom: 20px;
-      border-radius: 10px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     }
-    a {
+
+    .materia h2 {
+      margin-top: 0;
       color: #4a148c;
+    }
+
+    a {
+      display: inline-block;
+      margin-top: 10px;
+      color: #311b92;
       text-decoration: none;
       font-weight: bold;
+    }
+
+    a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
-  <h1>Libros de Quinto Grado</h1>
+  <div class="container">
+    <h1>Libros de Quinto Grado</h1>
 
-  <div class="materia">
-    <h2>Historia, Geografía y Economía</h2>
-    <div class="libro">
+    <div class="materia">
+      <h2>Historia, Geografía y Economía</h2>
       <p>📘 Libro disponible próximamente</p>
     </div>
-  </div>
 
-  <div class="materia">
-    <h2>DPCC (Desarrollo Personal, Ciudadanía y Cívica)</h2>
-    <div class="libro">
+    <div class="materia">
+      <h2>DPCC (Desarrollo Personal, Ciudadanía y Cívica)</h2>
       <p>📘 Libro disponible próximamente</p>
     </div>
-  </div>
 
-  <div class="materia">
-    <h2>CTA (Ciencia, Tecnología y Ambiente)</h2>
-    <div class="libro">
+    <div class="materia">
+      <h2>CTA (Ciencia, Tecnología y Ambiente)</h2>
       <p>📘 Libro disponible próximamente</p>
     </div>
   </div>
