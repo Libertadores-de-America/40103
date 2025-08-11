@@ -14,6 +14,7 @@
     }
 
     header {
+      position: relative; /* Para ubicar el botón en la esquina */
       padding: 50px 20px 20px;
       background: url('colegio-libertadores.jpg') no-repeat center top;
       background-size: cover;
@@ -31,6 +32,27 @@
       font-size: 1.2em;
       margin-bottom: 40px;
       text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    }
+
+    /* Botón Visión y Misión en la esquina */
+    .vision-mision-btn {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background-color: #ffffff;
+      color: #7e6bc9;
+      padding: 10px 15px;
+      font-size: 14px;
+      border-radius: 10px;
+      font-weight: bold;
+      text-decoration: none;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      transition: transform 0.2s, background-color 0.3s;
+    }
+
+    .vision-mision-btn:hover {
+      transform: scale(1.05);
+      background-color: #f0f8ff;
     }
 
     .grados {
@@ -84,6 +106,7 @@
 <body>
 
   <header>
+    <a class="vision-mision-btn" href="vision-mision.html">Visión y Misión</a>
     <h1>📚 Biblioteca Virtual Escolar</h1>
     <p>Accede a los libros por grado y materia. Disponible para todos los estudiantes.</p>
   </header>
@@ -94,7 +117,6 @@
     <a class="boton-grado" href="tercer-grado.html">Tercer Grado</a>
     <a class="boton-grado" href="cuarto-grado.html">Cuarto Grado</a>
     <a class="boton-grado" href="quinto-grado.html">Quinto Grado</a>
-    <a class="boton-grado" href="vision-mision.html">Visión y Misión</a>
   </div>
 
   <section>
@@ -111,16 +133,9 @@
     <p>Si necesitas un libro que aún no está disponible, comunícalo a tu tutor o escribe al correo del colegio.</p>
   </section>
 
-  <section>
-    <h2>💡 Visión y Misión</h2>
-    <p><strong>Misión:</strong> Brindar una educación integral basada en valores, fomentando el pensamiento crítico y la creatividad para formar ciudadanos comprometidos con su comunidad.</p>
-    <p><strong>Visión:</strong> Ser una institución educativa reconocida por su excelencia académica, inclusión y formación humana, preparando líderes del mañana.</p>
-  </section>
-
   <footer>
     &copy; 2025 Colegio Libertadores de América. Todos los derechos reservados.
   </footer>
 
 </body>
 </html>
-
