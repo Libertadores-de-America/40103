@@ -2,27 +2,16 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Visión y Misión</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
       font-family: 'Poppins', sans-serif;
       background: linear-gradient(to right, #6dd5ed, #7e6bc9);
-      color: #fff;
       padding: 20px;
+      margin: 0;
     }
-    section {
-      background-color: rgba(255, 255, 255, 0.9);
-      color: #333;
-      padding: 20px;
-      border-radius: 15px;
-      max-width: 800px;
-      margin: auto;
-    }
-    h1 {
-      color: #7e6bc9;
-      text-align: center;
-    } 
     .btn-volver {
       display: inline-block;
       background-color: #7e6bc9;
@@ -37,6 +26,40 @@
     .btn-volver:hover {
       background-color: #5a4aa6;
     }
+    section {
+      background-color: rgba(255, 255, 255, 0.95);
+      color: #333;
+      padding: 20px;
+      border-radius: 15px;
+      max-width: 800px;
+      margin: auto;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    }
+    h2 {
+      color: #7e6bc9;
+      text-align: center;
+      margin-top: 0;
+    }
+    p {
+      text-align: justify;
+      line-height: 1.6;
+    }
+    .item {
+      background-color: #f5f3ff;
+      border-left: 6px solid #7e6bc9;
+      padding: 15px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    @media (max-width: 600px) {
+      section {
+        padding: 15px;
+      }
+      .item {
+        padding: 12px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -44,9 +67,16 @@
   <a href="index.html" class="btn-volver">⬅ Volver a la página principal</a>
 
   <section>
-    <h1>💡 Visión y Misión</h1>
-    <p><strong>Visión:</strong> Somos una Institución educativa sólida, acogedora e inclusiva, con trayectoria reconocida, cuya misión es brindar una formación integral de calidad, buscando la excelencia educativa, basada en una cultura de valores, a fin de lograr el perfil de egreso de la educación básica con principios libertarios de lealtad, disciplina y superación.</p>
-    <p><strong>Misión:</strong> Al 2027, la I. E. 40130 Libertadores de América es una comunidad educativa líder y competitiva, donde sus estudiantes son capaces de desarrollar el pensamiento creativo, crítico, reflexivo y planificar de manera asertiva su proyecto de vida, en un marco científico, humanístico, espiritual, ambiental, cultural, académico y tecnológico.</p>
+    <div class="item">
+      <h2>💡 Visión</h2>
+      <p>Somos una Institución educativa sólida, acogedora e inclusiva, con trayectoria reconocida, cuya misión es brindar una formación integral de calidad, buscando la excelencia educativa, basada en una cultura de valores, a fin de lograr el perfil de egreso de la educación básica con principios libertarios de lealtad, disciplina y superación.</p>
+    </div>
+
+    <div class="item">
+      <h2>🎯 Misión</h2>
+      <p>Al 2027, la I. E. 40130 Libertadores de América es una comunidad educativa líder y competitiva, donde sus estudiantes son capaces de desarrollar el pensamiento creativo, crítico, reflexivo y planificar de manera asertiva su proyecto de vida, en un marco científico, humanístico, espiritual, ambiental, cultural, académico y tecnológico.</p>
+    </div>
   </section>
+
 </body>
 </html>
