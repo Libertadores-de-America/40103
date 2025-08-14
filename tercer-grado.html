@@ -3,100 +3,131 @@
 <head>
   <meta charset="UTF-8">
   <title>Libros - Tercer Grado</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
   <style>
-     body {
+    body {
       margin: 0;
       font-family: 'Poppins', sans-serif;
-      background: linear-gradient(to right, #ffecd2, #fcb69f);
+      background: linear-gradient(to right, #ffdde1, #ff9a9e);
       color: #333;
-      padding: 20px;
+      padding: 15px;
     }
 
     h1 {
       text-align: center;
-      color: #d35400;
-      margin-bottom: 10px;
+      color: #c62828;
+      margin-bottom: 20px;
     }
 
     .volver {
       display: inline-block;
-      margin-bottom: 30px;
+      margin-bottom: 20px;
       text-decoration: none;
       color: #fff;
-      background-color: #d35400;
-      padding: 10px 20px;
-      border-radius: 10px;
+      background-color: #e53935;
+      padding: 10px 15px;
+      border-radius: 8px;
       transition: background-color 0.3s;
     }
 
     .volver:hover {
-      background-color: #e67e22;
+      background-color: #ef5350;
     }
 
     .materia {
       background-color: white;
-      border-radius: 15px;
-      padding: 20px;
-      margin-bottom: 20px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      border-radius: 12px;
+      padding: 15px;
+      margin-bottom: 15px;
+      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
     }
 
     .materia h2 {
-      color: #d35400;
+      color: #c62828;
+      font-size: 1.1em;
+      margin-bottom: 8px;
     }
 
     .libro {
-      margin-top: 10px;
-      padding: 10px;
-      background-color: #fceae3;
-      border-left: 5px solid #d35400;
-      border-radius: 8px;
+      padding: 8px;
+      background-color: #ffebee;
+      border-left: 4px solid #e53935;
+      border-radius: 6px;
+      font-size: 0.95em;
+      word-wrap: break-word;
+    }
+
+    .libro a {
+      color: #c62828;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .libro a:hover {
+      text-decoration: underline;
     }
 
     footer {
       text-align: center;
-      margin-top: 40px;
-      padding: 15px;
-      background-color: #d35400;
+      margin-top: 25px;
+      padding: 10px;
+      background-color: #e53935;
       color: white;
-      border-radius: 10px;
+      border-radius: 8px;
+      font-size: 0.9em;
     }
- </style>
+
+    @media (max-width: 600px) {
+      body {
+        padding: 10px;
+      }
+      .materia {
+        padding: 12px;
+      }
+      .volver {
+        display: block;
+        text-align: center;
+        margin-bottom: 15px;
+      }
+    }
+  </style>
 </head>
 <body>
-<a class="volver" href="/40103/">⬅ Volver a la página principal</a>
 
-<h1>📘 Libros de Tercer Grado</h1>
+  <a class="volver" href="/40103/">⬅ Volver a la página principal</a>
+  <h1>📘 Libros de Tercer Grado</h1>
 
-<div class="materia">
-  <h2>Historia, Geografía y Economía</h2>
-  <div class="libro">
-    <a href="https://drive.google.com/file/d/1zYzj8_BZHl-z5BPA6-wRsREjzeqtduEb/view?usp=drive_link" target="_blank">
-      Ver libro de Santillana (HGE)
-    </a>
+  <div class="materia">
+    <h2>Historia, Geografía y Economía</h2>
+    <div class="libro">
+      <a href="https://drive.google.com/file/d/1zYzj8_BZHl-z5BPA6-wRsREjzeqtduEb/view?usp=drive_link" target="_blank">
+        📘 Ver libro de Santillana (HGE)
+      </a>
+    </div>
   </div>
-</div>
 
-<div class="materia">
-  <h2>Desarrollo Personal, Ciudadanía y Cívica (DPCC)</h2>
-  <div class="libro">
-    <a href="https://drive.google.com/file/d/18ak_dCWNe21CuvC_glQkhMVPH51xk31g/view?usp=drive_link" target="_blank">
-      Ver libro de Santillana (DPCC)
-    </a>
+  <div class="materia">
+    <h2>Desarrollo Personal, Ciudadanía y Cívica (DPCC)</h2>
+    <div class="libro">
+      <a href="https://drive.google.com/file/d/18ak_dCWNe21CuvC_glQkhMVPH51xk31g/view?usp=drive_link" target="_blank">
+        📘 Ver libro de Santillana (DPCC)
+      </a>
+    </div>
   </div>
-</div>
 
-<div class="materia">
-  <h2>Ciencia, Tecnología y Ambiente (CTA)</h2>
-  <div class="libro">
-    <a href="https://drive.google.com/file/d/12UNiCGQST5tZYtjuHORD06CCY0zqiIxN/view?usp=drive_link" target="_blank">
-      Ver libro de Santillana (CTA)
-    </a>
+  <div class="materia">
+    <h2>Ciencia, Tecnología y Ambiente (CTA)</h2>
+    <div class="libro">
+      <a href="https://drive.google.com/file/d/12UNiCGQST5tZYtjuHORD06CCY0zqiIxN/view?usp=drive_link" target="_blank">
+        📘 Ver libro de Santillana (CTA)
+      </a>
+    </div>
   </div>
-</div>
 
-<pie de página>Biblioteca Escolar – Tercer Grado | Más libros se agregarán pronto.</pie de página>
-  
-</cuerpo>
+  <footer>
+    Biblioteca Escolar – Tercer Grado | Más libros se agregarán pronto.
+  </footer>
+
+</body>
 </html>
