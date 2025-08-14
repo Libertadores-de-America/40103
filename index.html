@@ -14,7 +14,7 @@
     }
 
     header {
-      position: relative; /* Para ubicar el botón en la esquina */
+      position: relative;
       padding: 50px 20px 20px;
       background: url('colegio-libertadores.jpg') no-repeat center top;
       background-size: cover;
@@ -34,15 +34,14 @@
       text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
     }
 
-    /* Botón Visión y Misión en la esquina */
     .vision-mision-btn {
       position: absolute;
       top: 20px;
       right: 20px;
       background-color: #ffffff;
       color: #7e6bc9;
-      padding: 10px 15px;
-      font-size: 14px;
+      padding: 12px 18px;
+      font-size: 16px;
       border-radius: 10px;
       font-weight: bold;
       text-decoration: none;
@@ -101,6 +100,20 @@
       background-color: #4a3b8f;
       color: white;
     }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2em;
+      }
+      .boton-grado {
+        font-size: 16px;
+        padding: 15px 20px;
+      }
+      .vision-mision-btn {
+        font-size: 14px;
+        padding: 10px 15px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -122,15 +135,15 @@
   <section>
     <h2>📅 Próximos eventos</h2>
     <ul>
-      <li>05 de mayo - Taller de lectura</li>
-      <li>12 de mayo - Concurso de Ciencia</li>
-      <li>20 de mayo - Día del libro</li>
+      <li>Día de Arequipa</li>
+      <li>Feria de Ciencias</li>
+      <li>Reinado Escolar</li>
     </ul>
   </section>
 
   <section>
     <h2>ℹ️ Información útil</h2>
-    <p>Si necesitas un libro que aún no está disponible, comunícalo a tu tutor o escribe al correo del colegio.</p>
+    <p>Consulta a tu tutor o en la dirección del colegio para solicitar libros adicionales o información sobre actividades.</p>
   </section>
 
   <footer>
