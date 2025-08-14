@@ -6,7 +6,7 @@
   <title>Quinto Grado</title>
   <style>
     body {
-      background-color: #ede7f6;
+      background-color: #f3e5f5; /* Morado muy suave */
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
       padding: 0;
@@ -25,7 +25,7 @@
     }
 
     .materia {
-      background-color: #d1c4e9;
+      background-color: #e1bee7; /* Morado claro */
       border-left: 8px solid #8e24aa;
       padding: 20px;
       margin-bottom: 20px;
@@ -41,13 +41,41 @@
     a {
       display: inline-block;
       margin-top: 10px;
-      color: #311b92;
+      color: #4a148c;
       text-decoration: none;
       font-weight: bold;
     }
 
     a:hover {
       text-decoration: underline;
+    }
+
+    .volver {
+      display: block;
+      margin: 30px auto 0;
+      padding: 12px 24px;
+      background-color: #6a1b9a;
+      color: #fff;
+      text-align: center;
+      border-radius: 8px;
+      font-weight: bold;
+      text-decoration: none;
+      max-width: 200px;
+    }
+
+    .volver:hover {
+      background-color: #8e24aa;
+    }
+
+    /* Adaptación para móviles */
+    @media (max-width: 600px) {
+      .materia {
+        padding: 15px;
+      }
+
+      h1 {
+        font-size: 1.5em;
+      }
     }
   </style>
 </head>
@@ -57,18 +85,20 @@
 
     <div class="materia">
       <h2>Historia, Geografía y Economía</h2>
-      <p>https://drive.google.com/file/d/19n6ZIaZfsfm9_1_474CAhpyW3n_sbl3P/view?usp=sharing</p>
+      <a href="https://drive.google.com/file/d/19n6ZIaZfsfm9_1_474CAhpyW3n_sbl3P/view?usp=sharing" target="_blank">📘 Abrir libro</a>
     </div>
 
     <div class="materia">
       <h2>DPCC (Desarrollo Personal, Ciudadanía y Cívica)</h2>
-      <p>https://drive.google.com/file/d/1mqQ4PvM85VeD9gk3S0B9QkKXQ9jNRasJ/view?usp=sharing</p>
+      <a href="https://drive.google.com/file/d/1mqQ4PvM85VeD9gk3S0B9QkKXQ9jNRasJ/view?usp=sharing" target="_blank">📘 Abrir libro</a>
     </div>
 
     <div class="materia">
       <h2>CTA (Ciencia, Tecnología y Ambiente)</h2>
-      <p>https://drive.google.com/file/d/1HpXU1OrmetTmbJER9Hxqw6cDNEndjqR0/view?usp=sharing</p>
+      <a href="https://drive.google.com/file/d/1HpXU1OrmetTmbJER9Hxqw6cDNEndjqR0/view?usp=sharing" target="_blank">📘 Abrir libro</a>
     </div>
+
+    <a href="index.html" class="volver">⬅ Volver a Inicio</a>
   </div>
 </body>
 </html>
