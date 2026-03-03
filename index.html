@@ -2,8 +2,13 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
+
+  <!-- IMPORTANTE PARA CELULAR -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Biblioteca Escolar</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
   <style>
     body {
       margin: 0;
@@ -19,9 +24,11 @@
       to { opacity: 1; }
     }
 
+    /* ===== HEADER ===== */
+
     header {
       position: relative;
-      padding: 60px 20px 40px;
+      padding: 80px 20px 60px;
       background: url('colegio-libertadores.jpg') no-repeat center center;
       background-size: cover;
       color: white;
@@ -30,10 +37,7 @@
     header::before {
       content: "";
       position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
+      inset: 0;
       background: rgba(0, 0, 0, 0.5);
     }
 
@@ -43,26 +47,29 @@
     }
 
     header h1 {
-      font-size: 3em;
-      margin-bottom: 10px;
+      font-size: clamp(1.8rem, 5vw, 3rem);
+      margin-bottom: 15px;
       text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
     }
 
     header p {
-      font-size: 1.2em;
-      margin-bottom: 40px;
+      font-size: clamp(1rem, 3.5vw, 1.2rem);
+      margin-bottom: 30px;
       text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     .vision-mision-btn {
       position: absolute;
-      top: 20px;
-      right: 20px;
+      top: 15px;
+      right: 15px;
       background-color: #ffffff;
       color: #7e6bc9;
-      padding: 14px 20px;
-      font-size: 18px;
-      border-radius: 10px;
+      padding: 10px 16px;
+      font-size: 14px;
+      border-radius: 8px;
       font-weight: bold;
       text-decoration: none;
       box-shadow: 0 4px 10px rgba(0,0,0,0.2);
@@ -73,6 +80,8 @@
       transform: scale(1.05);
       background-color: #f0f8ff;
     }
+
+    /* ===== BOTONES GRADOS ===== */
 
     .grados {
       display: flex;
@@ -85,60 +94,81 @@
     .boton-grado {
       background-color: #ffffff;
       color: #7e6bc9;
-      padding: 25px 35px;
+      padding: 20px 30px;
       border-radius: 15px;
-      font-size: 20px;
+      font-size: 18px;
       font-weight: bold;
       text-decoration: none;
       box-shadow: 0 8px 20px rgba(0,0,0,0.2);
       transition: all 0.3s ease;
+      width: 200px;
     }
 
     .boton-grado:hover {
-      transform: translateY(-8px);
+      transform: translateY(-6px);
       box-shadow: 0 15px 25px rgba(0,0,0,0.3);
     }
+
+    /* ===== SECCIONES ===== */
 
     section {
       background-color: rgba(255, 255, 255, 0.95);
       color: #333;
-      margin: 20px auto;
-      padding: 25px;
+      margin: 20px;
+      padding: 20px;
       border-radius: 15px;
-      max-width: 850px;
-      text-align: left;
       font-size: 0.95em;
       box-shadow: 0 6px 15px rgba(0,0,0,0.2);
     }
 
     h2 {
       color: #7e6bc9;
-      font-size: 1.6em;
+      font-size: 1.4em;
     }
+
+    section ul {
+      padding-left: 20px;
+    }
+
+    /* ===== FOOTER ===== */
 
     footer {
       margin-top: 40px;
-      padding: 25px;
+      padding: 20px;
       background-color: #4a3b8f;
       color: white;
-      font-size: 0.9em;
+      font-size: 0.85em;
     }
 
-    @media (max-width: 768px) {
-      header h1 {
-        font-size: 2.2em;
+    /* ===== OPTIMIZACIÓN EXTRA PARA MÓVIL ===== */
+
+    @media (max-width: 600px) {
+
+      .grados {
+        flex-direction: column;
+        align-items: center;
       }
+
       .boton-grado {
-        font-size: 18px;
-        padding: 20px 25px;
-      }
-      .vision-mision-btn {
+        width: 85%;
         font-size: 16px;
-        padding: 12px 18px;
+        padding: 18px;
+      }
+
+      .vision-mision-btn {
+        font-size: 12px;
+        padding: 8px 12px;
+      }
+
+      section {
+        margin: 15px;
+        font-size: 0.9em;
       }
     }
+
   </style>
 </head>
+
 <body>
 
   <header>
@@ -175,8 +205,7 @@
     </p>
     <p>
       Nuestro compromiso es brindar una educación de calidad, fomentando valores,
-      responsabilidad y excelencia académica. Para mayor información sobre vacantes
-      disponibles, horarios y requisitos, comunicarse con la administración.
+      responsabilidad y excelencia académica.
     </p>
   </section>
 
